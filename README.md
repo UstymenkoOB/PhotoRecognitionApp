@@ -1,4 +1,4 @@
-# Проект "PhotoShare"
+# Проект "PhotoRecognitionApp"
 <p align="center">
    <img src="https://img.shields.io/badge/Language-Python-9cf">
    <img src="https://img.shields.io/badge/FastAPI-0.95.1-brightgreen">
@@ -8,7 +8,7 @@
 </p>
 
 ## Розгорнут
-- [Live PhotoShare](https://photoshare-team6.fly.dev/docs)
+- 
 
 ## Установка 💻
 
@@ -25,9 +25,9 @@
  
 ## Розробники
 <div align="">
-  Developer: <a href="https://github.com/qquinyri1">Nikita Pavlov</a><br>
-  Developer: <a href="https://github.com/Jakson992">Jaka Petrenko</a><br>
   Developer: <a href="https://github.com/OlegDovhyi">Oleg Dovhyi</a><br>
-  Scrum Muster/Developer: <a href="https://github.com/UstymenkoOB">Oksana Ustymenko</a><br>
-  Team Lead/Developer: <a href="https://github.com/GkiriChen">Gennadiy Kiricheko</a><br>
+  Developer: <a href="https://github.com/Nevskiy911">Oleksandr Malieiev</a><br>
+  Developer: <a href="https://github.com/CadejoBlanko">Oleksandr Martyniuk</a><br>
+  Scrum Muster/Developer: <a href="https://github.com/GhosteLLoS">Oleksii Medvetskyi</a><br>
+  Team Lead/Developer: <a href="https://github.com/UstymenkoOB">Oksana Ustymenko</a><br>
 </div>
