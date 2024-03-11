@@ -1,0 +1,306 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1, p, ul, address {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    margin-top: 0;
+    /*margin-bottom: 8px;*/
+}
+h2 {
+    margin-top: 0;
+    /*margin-bottom: 72px;*/
+}
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-color)
+}
+:root {
+    --brand-color: #2E2F42;
+    --text-color: #434455;
+    --iris-color: #4D5AE5;
+    --studio-color: #F4F4FD;
+    --border-color: #E7E9FC;
+    --button-active: #404BBF;
+    --light-color: #ffffff;
+}
+.menu-list {
+    margin-left: 76px;
+}
+.logo {
+    /*display: flex;*/
+    /*margin-left: 40px;*/
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris-color);
+}
+.studio {
+    /*display: flex;*/
+    color: var(--brand-color)
+}
+.link {
+    text-decoration: none;
+}
+.link:hover,
+.link:focus {
+    color: var(--button-active);
+} 
+.list, .list-head {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.menu {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+}
+.menu-head {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.head-nav {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+}
+.address {
+    font-style: normal;
+    display: flex;
+    margin-left: auto;
+}
+.adr-font {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.head-sect {
+    padding: 188px 0;
+    background-color: var(--brand-color);
+    text-align: center;
+    color: var(--studio-color);
+}
+.head-h {
+    margin-bottom: 48px;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+}
+.head-but {
+    background-color: var(--iris-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    padding: 16px 32px;
+    gap: 10px;
+}
+.head-but:hover,
+.head-but:focus {
+    background-color: var(--button-active)
+}
+.button {
+    cursor: pointer;
+    text-align: center;
+}
+.section-h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+    margin-bottom: 8px;
+}
+.section-p {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    padding-bottom: 32px;
+}
+.section-pp {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.section-hh {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--brand-color);
+    margin-bottom: 72px;
+}
+.list-pad{
+    padding-bottom: 32px;
+}
+.img-teh {
+    border: 1px solid var(--border-color);
+}
+.img-foto {
+    margin-bottom: 32px;
+}
+.sect-back {
+    background-color: var(--studio-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+.li-back {
+    background-color: var(--light-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+
+.studio-light {
+    color: var(--studio-color);
+    margin-bottom: 17.5px;
+}
+.button-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris-color);
+    background-color: var(--studio-color);
+}
+.button-text:hover,
+.button-text:focus {
+    color: var(--light-color);
+    background-color: var(--button-active);
+}
+.portf-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--studio-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.but-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+}
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*display: flex;*/
+}
+.section {
+    /*justify-content: space-evenly;*/
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+.portfolio-section {
+    /*justify-content: space-evenly;*/
+    padding-top: 96px;
+    padding-bottom: 120px;
+
+}
+.section_doing {
+    /*justify-content: space-evenly;*/
+    padding-top: 0px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    border-bottom: 1px solid var(--border-color);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.portf-kart {
+    width: 360px;
+    margin-bottom: 48px;
+}
+.list-head .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.portfolio {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .item:nth-child(3n) {
+    margin-right: 0;
+}
+.portfolio .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+.port-pad {
+    padding-left: 16px;
+}
+.port-text {
+    padding-left: 16px;
+    padding-top: 32px;
+    /*padding-bottom: 32px;*/
+    border: 1px solid var(--border-color);
+}
+.foot-pad {
+    margin-left: 0;
+    align-items: left;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--brand-color);
+    color: var(--studio-color);
+}
+.foot-p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer-text {
+    line-height: 24px;
+    margin-top: 17.5px;
+    width: 264px;
+}

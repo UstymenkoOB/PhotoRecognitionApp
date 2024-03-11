@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="sect-back section">
+    <div class="container">
+        <h2 class="section-hh">Our Team</h2>
+        <ul class="list list-pad">
+            <li class="li-back item">
+                <img class="img-foto" src="{{ url_for('static', path='foto1.jpg') }}" alt="Man" width="264" height="260">
+                <h3 class="section-h">Mark Guerrero</h3>
+                <p class="section-p">Product Designer</p>
+            </li>
+            <li class="li-back item">
+                <img class="img-foto" src="{{ url_for('static', path='foto2.jpg') }}" alt="Man" width="264" height="260">
+                <h3 class="section-h">Tom Ford</h3>
+                <p class="section-p">Frontend Developer</p>
+            </li>
+            <li class="li-back item">
+                <img class="img-foto" src="{{ url_for('static', path='foto3.jpg') }}" alt="Woman" width="264" height="260">
+                <h3 class="section-h">Camila Garcia</h3>
+                <p class="section-p">Marketing</p>
+            </li>
+            <li class="li-back item">
+                <img class="img-foto" src="{{ url_for('static', path='foto4.jpg') }}" alt="Man" width="264" height="260">
+                <h3 class="section-h">Daniel Wilson</h3>
+                <p class="section-p">UI Designer</p>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
