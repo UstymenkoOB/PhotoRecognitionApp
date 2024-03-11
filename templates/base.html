@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}PhotoApp{% endblock %}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='styles.css') }}">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container menu-head">
+                <nav class="head-nav">
+                    <a class="logo link" href="{{ url_for('Home') }}">Smart<span class="studio">Vision</span></a>
+                    <ul class="list-head menu-list">
+                        <li class="item"><a class="menu link" href="{{ url_for('Home') }}">PhotoApp</a></li>
+                        <li class="item"><a class="menu link" href="{{ url_for('Recognition') }}">Image Recognition</a></li>
+                        <li class="item"><a class="menu link" href="{{ url_for('Team') }}">About us</a></li>
+                    </ul>
+                </nav>
+                <address class="address">
+                    <ul class="list-head">
+                        <li class="item"><a class="adr-font link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="item"><a class="adr-font link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+            </div>
+        </header>
+        
+        <div class="content">
+            {% block content %} {% endblock %}
+        </div>
+
+        <footer class="foot-pad">
+            <div class="container foot-p">
+                <a class="logo link" href="{{ url_for('Home') }}">Smart<span class="studio-light">Vision</span></a>
+                <p class="footer-text">Explore seamless image management and unlock the power of AI-driven insights at our innovative photo storage &
+                recognition service.</p>
+            </div>
+        </footer>
+    </body>
+</html>
