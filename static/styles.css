@@ -104,7 +104,9 @@ body {
 }
 .head-sect {
     padding: 188px 0;
-    background-color: var(--brand-color);
+    background-image: url('AI_1.jpg');
+    background-size: cover;
+    background-position: center center;
     text-align: center;
     color: var(--studio-color);
 }
