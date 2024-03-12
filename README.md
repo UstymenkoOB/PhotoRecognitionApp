@@ -28,6 +28,6 @@
   Developer: <a href="https://github.com/OlegDovhyi">Oleg Dovhyi</a><br>
   Developer: <a href="https://github.com/Nevskiy911">Oleksandr Malieiev</a><br>
   Developer: <a href="https://github.com/CadejoBlanko">Oleksandr Martyniuk</a><br>
-  Scrum Muster/Developer: <a href="https://github.com/GhosteLLoS">Oleksii Medvetskyi</a><br>
+  Scrum Master/Developer: <a href="https://github.com/GhosteLLoS">Oleksii Medvetskyi</a><br>
   Team Lead/Developer: <a href="https://github.com/UstymenkoOB">Oksana Ustymenko</a><br>
 </div>
