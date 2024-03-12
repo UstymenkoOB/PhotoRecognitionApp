@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<!-- Тут має бути ваш код HTML -->
+    <form action="{{ url_for('api_predict') }}" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png">
+        <br>
+        <input type="submit" value="Upload">
+    </form>
 
+    {% if image_base64 %}
+        <img src="data:image/png;base64,{{ image_base64 }}" height="200" alt="Uploaded Image">
+    {% endif %}
+
+    {% if predicted_label %}
+        <p>Predicted Label: {{ predicted_label }}</p>
+    {% endif %}
 {% endblock %}
