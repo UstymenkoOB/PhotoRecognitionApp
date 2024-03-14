@@ -78,3 +78,17 @@
     background-color: var(--button-active); 
 }
 
+.upload-lab {
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Радиус скругления */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Плавный переход при наведении */
+}
+
+.upload-lab:hover {
+    background-color: #0077cc; 
+}
