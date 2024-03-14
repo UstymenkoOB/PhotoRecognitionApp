@@ -3,12 +3,20 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='style.css') }}">
 
     <div class="upload-container">
-        <form action="{{ url_for('api_predict') }}" method="post" enctype="multipart/form-data" class="upload-form">
-            <label for="file" class="upload-label">Choose a file:</label>
+        <form action="{{ url_for('api_predict') }}" method="post" enctype="multipart/form-data" class="upload-form" id="upload-form">
+            <label for="file" class="upload-label">Upload Image:</label>
             <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" class="upload-input">
             <p id="file-name" class="selected-file">Selected file: None</p>
             <input type="submit" value="Upload" class="upload-button">
         </form>
+        
+        <div class="url-input-container" style="display: flex; align-items: center;">
+            <button onclick="showUrlInput()" class="upload-lab" style="margin-right: 10px;">Enter URL</button>
+            <div id="url-input" style="display: none;">
+                <input type="text" id="image-url" placeholder="Enter Image URL" style="margin-right: 10px;">
+                <input type="button" value="Load" onclick="showImageUrl()" class="upload-button">
+            </div>
+        </div>
         
 
         {% if image_base64 %}
@@ -21,6 +29,17 @@
     </div>
 
     <script>
+        function showUrlInput() {
+            var urlInput = document.getElementById('url-input');
+            urlInput.style.display = 'flex';
+        }
+
+        function showImageUrl() {
+            var imageUrl = document.getElementById('image-url').value;
+            // Add this line to submit the form
+            document.getElementById("upload-form").submit();
+        }
+
         document.getElementById('file').addEventListener('change', function() {
             var fileNameDisplay = document.getElementById('file-name');
             var selectedFile = this.files[0].name;
