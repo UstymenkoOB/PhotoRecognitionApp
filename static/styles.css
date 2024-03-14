@@ -23,7 +23,8 @@ body {
     background-color: #fff;
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
-    background-color: var(--light-color)
+    background-color: var(--light-color);
+    cursor: url('crus.png'), auto;
 }
 :root {
     --brand-color: #2E2F42;
