@@ -8,6 +8,7 @@
 
 .upload-form {
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 80%;
 }
 
@@ -15,7 +16,6 @@
 .upload-label {
     display: inline-block;
     font-weight: bold;
-    margin-bottom: 10px;
     background-color: #0099ff; 
     color: white;
     padding: 10px 20px;
@@ -54,13 +54,14 @@
 }
 
 .uploaded-image {
-    margin-top: 20px;
     max-width: 100%;
     border-radius: 10px;
+    height: 400px;
 }
 
 .predicted-label {
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -91,4 +92,19 @@
 
 .upload-lab:hover {
     background-color: #0077cc; 
+}
+
+.enter-url {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    height: 35px;
+    padding: 8px 16px;
+    display: inline-block;
+    background-color: azure;
+    border-color: grey;
+}
+ 
+.url-input-form {
+    margin-bottom: 20px;
 }
