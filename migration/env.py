@@ -5,7 +5,7 @@ from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import async_engine_from_config
 from alembic import context
 
-from src.database.models import Base
+from src.database.db import Base
 from src.conf.config import settings
 
 # Initialize Alembic configuration
@@ -20,7 +20,6 @@ target_metadata = Base.metadata
 
 # Set the database URL
 config.set_main_option("sqlalchemy.url", settings.postgres_url)
-
 
 def do_run_migrations(connection: Connection) -> None:
     # Configure Alembic context with the connection and target metadata
