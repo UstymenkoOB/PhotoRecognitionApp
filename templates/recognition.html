@@ -20,7 +20,7 @@
         
 
         {% if image_base64 %}
-            <img src="data:image/png;base64,{{ image_base64 }}" class="uploaded-image" alt="Uploaded Image">
+            <img src="data:image/png;base64,{{ image_base64 }}" height="350" class="uploaded-image" alt="Uploaded Image">
         {% endif %}
 
         {% if predicted_label %}

@@ -20,7 +20,7 @@ async def predict_image(request: Request, file: UploadFile = File(...)):
     image_array = np.expand_dims(image_array, axis=0)
 
     class_labels = ['Літак', 'Автомобіль', 'Птах', 'Кіт',
-                    'Олень', 'Собака', 'Жаба', 'Кінь', 'Корабль', 'Вантажівка']
+                    'Олень', 'Собака', 'Жаба', 'Кінь', 'Корабель', 'Вантажівка']
 
     prediction = model.predict(image_array)
     predicted_class = np.argmax(prediction)
