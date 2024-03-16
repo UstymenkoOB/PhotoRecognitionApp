@@ -30,11 +30,6 @@ async def recognition(request: Request):
 async def about_us(request: Request):
     return templates.TemplateResponse("about_us.html", {"request": request, "message": "About Us Page"})
 
-
-# @app.post("/uploadfile", name='File', response_class=HTMLResponse)
-# async def create_upload_file(file: UploadFile = File(...), description: str = Form(...)):
-#     return templates.TemplateResponse("recognition.html", {"filename": file.filename, "description": description})
-
 app.include_router(predict.router, prefix='/api')
 # app.include_router(healthchecker.router, prefix="/api")
 # app.include_router(auth.router, prefix="/api")
