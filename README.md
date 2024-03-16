@@ -8,7 +8,7 @@
 </p>
 
 ## Розміщення на DockerHub
-<a href="https://hub.docker.com/repository/docker/ustymenko/data_science">PhotoRecognitionApp</a>
+<a href="https://hub.docker.com/r/ustymenko/data_science/tags">PhotoRecognitionApp</a>
 
 ## Установка 💻
 
