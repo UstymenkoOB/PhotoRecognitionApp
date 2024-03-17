@@ -10,7 +10,7 @@ import base64
 import imghdr
 
 router = APIRouter(prefix='/api', tags=["predict"])
-model = load_model('Models/cifar10_best1.h5')
+model = load_model('Models/cifar10_best_latest.h5')
 templates = Jinja2Templates(directory="templates")
 
 

@@ -7,6 +7,9 @@
    <img src="https://img.shields.io/badge/License-MIT-yellow">
 </p>
 
+## Опис моделі
+
+
 ## Розміщення на DockerHub
 <a href="https://hub.docker.com/r/ustymenko/data_science/tags">PhotoRecognitionApp</a>
 
