@@ -6,6 +6,7 @@
    <img src="https://img.shields.io/badge/Pytest-7.3.0-informational">
    <img src="https://img.shields.io/badge/Language-HTML-purple">
    <img src="https://img.shields.io/badge/Language-CSS-blue">
+   <img src="https://img.shields.io/badge/Platform-Jupyter-orange">
    <img src="https://img.shields.io/badge/Library-TensorFlow-pink">
    <img src="https://img.shields.io/badge/License-MIT-yellow">
 </p>
