@@ -4,6 +4,16 @@ from sqlalchemy.sql.schema import ForeignKey
 from sqlalchemy.sql.sqltypes import DateTime
 from .db import Base
 
+class Prediction(Base):
+    """Model representing predictions."""
+    __tablename__ = "predictions"
+    id = Column(Integer, primary_key=True, index=True)
+    prediction_date = Column(DateTime)
+    filename = Column(String, nullable=True)  
+    url = Column(String, nullable=True)       
+    predicted_label = Column(String)
+
+
 
 class UserRole(Base):
     """Model representing user roles."""
