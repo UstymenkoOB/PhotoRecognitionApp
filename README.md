@@ -1,16 +1,19 @@
-# Проект "PhotoRecognitionApp"
+# Проєкт "PhotoRecognitionApp"
 <p align="center">
    <img src="https://img.shields.io/badge/Language-Python-9cf">
    <img src="https://img.shields.io/badge/FastAPI-0.95.1-brightgreen">
    <img src="https://img.shields.io/badge/SQLAlchemy-2.0-orange">
    <img src="https://img.shields.io/badge/Pytest-7.3.0-informational">
+   <img src="https://img.shields.io/badge/Language-HTML-purple">
+   <img src="https://img.shields.io/badge/Language-CSS-blue">
+   <img src="https://img.shields.io/badge/Library-TensorFlow-pink">
    <img src="https://img.shields.io/badge/License-MIT-yellow">
 </p>
 
 ## Опис моделі
 
 
-## Розміщення на DockerHub
+## Розміщення на DockerHub 
 <a href="https://hub.docker.com/r/ustymenko/data_science/tags">PhotoRecognitionApp</a>
 
 ## Установка 💻
