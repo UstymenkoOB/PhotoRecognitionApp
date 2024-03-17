@@ -5,6 +5,27 @@ from pydantic import BaseModel, EmailStr, Field
 from src.database.models import UserRole
 
 
+class PredictionBase(BaseModel):
+    prediction_date: datetime
+    filename: str = None
+    url: str = None
+    predicted_label: str
+
+class PredictionCreate(PredictionBase):
+    pass
+
+class Prediction(PredictionBase):
+    id: int
+
+    class Config:
+        orm_mode = True
+
+
+
+
+
+
+
 class ImageTagModel(BaseModel):
     """
     Model for representing an image tag.
