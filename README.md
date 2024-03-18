@@ -29,6 +29,7 @@
 8. В терміналі виконати команду ```poetry sell```
 9. В терміналі виконати команду ```docker-compose up -d```
 10. Передати у контейнер ```".env"``` файл командою ```docker cp .env photorecognitionapp-my_service-1:.env```
+11. Створити таблиці БД командою в терміналі ```docker exec photorecognitionapp-my_service-1 python create_db.py```
 11. Виконати міграції БД командою в терміналі ```docker exec photorecognitionapp-my_service-1 alembic upgrade heads```
 12. Також в терміналі запустити серевер командою ```docker exec -d photorecognitionapp-my_service-1 uvicorn main:app --host 0.0.0.0 --port 8080 --reload```
 13. Відкрити сторінку в браузері за посиланням ```http://localhost:8080/```.

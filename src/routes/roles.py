@@ -11,9 +11,9 @@ from src.services.auth_admin import is_admin
 router = APIRouter(prefix='/roles', tags=["roles"])
 security = HTTPBearer()
 
-
+# , dependencies=[Depends(is_admin)]
 @router.post("/create", status_code=status.HTTP_201_CREATED,
-             response_model=RoleModel, dependencies=[Depends(is_admin)]
+             response_model=RoleModel
              )
 async def post_role(
         id: int = Form(...),

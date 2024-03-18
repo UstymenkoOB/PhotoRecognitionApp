@@ -14,7 +14,6 @@ class Prediction(Base):
     predicted_label = Column(String)
 
 
-
 class UserRole(Base):
     """Model representing user roles."""
     __tablename__ = "userroles"

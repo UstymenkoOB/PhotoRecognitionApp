@@ -6,24 +6,46 @@ from src.database.models import UserRole
 
 
 class PredictionBase(BaseModel):
+    """
+    Base model for representing prediction information.
+
+    :param prediction_date: The date and time of the prediction.
+    :type prediction_date: datetime
+    :param filename: The name of the file associated with the prediction (optional).
+    :type filename: str
+    :param url: The URL associated with the prediction (optional).
+    :type url: str
+    :param predicted_label: The predicted label.
+    :type predicted_label: str
+    """
     prediction_date: datetime
     filename: str = None
     url: str = None
     predicted_label: str
 
+
 class PredictionCreate(PredictionBase):
+    """
+    Model for creating a prediction, inheriting from PredictionBase.
+    No additional fields are added.
+    """
     pass
 
-class Prediction(PredictionBase):
+
+class PredictionModel(PredictionBase):
+    """
+    Model representing a prediction, inheriting from PredictionBase.
+
+    :param id: The unique identifier of the prediction.
+    :type id: int
+    """
     id: int
 
     class Config:
+        """
+        Pydantic configuration class to enable ORM mode.
+        """
         orm_mode = True
-
-
-
-
-
 
 
 class ImageTagModel(BaseModel):
